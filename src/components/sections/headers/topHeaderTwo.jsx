@@ -7,8 +7,8 @@ const TopHeaderTwo = () => {
             <div className="container">
                 <div className="header-top-wrp">
                     <ul className="info">
-                        <li><i><FaPaperPlane /></i> <a href="#0">info.company@gmail.com</a></li>
-                        <li className="bor-left ms-4 ps-4"><i><FaLocationDot /></i> <a href="#0">example@example.com</a></li>
+                        <li><i><FaPaperPlane /></i> <a href="#0">info@brickmond.com</a></li>
+                        <li className="bor-left ms-4 ps-4"><i><FaLocationDot /></i> <a href="#0">Doha Qatar</a></li>
                     </ul>
                     <ul className="link-info">
                         <li className="bor-right"><Link to="#0"><i><FaFacebookF /></i></Link></li>

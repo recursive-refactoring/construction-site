@@ -30,14 +30,14 @@ const HeaderThree = () => {
                         </div>
                         <ul className={`main-menu ${isMobileMenuOpen ? "active" : ""}`}>
                             <Menus />
-                            <ShopCart />
-                            <li className="m-0 menu_info ms-0 ms-xl-3 mt-4 mt-xl-0">
+                            {/* <ShopCart /> */}
+                            {/* <li className="m-0 menu_info ms-0 ms-xl-3 mt-4 mt-xl-0">
                                 <i className="call_ico"><FaPhoneVolume /></i>
                                 <div className="call_info">
                                     <span>Call Any Time</span>
                                     <a className="d-block p-0" href="tel:+912659302003">+91 2659 302 003</a>
                                 </div>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
