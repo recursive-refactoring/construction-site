@@ -30,20 +30,20 @@ const AboutOne = () => {
               <div className="left-item">
                 <div className="video-btn-wrp">
                   <div className="video video-pulse">
-                    <div
+                    {/* <div
                       className="video-popup secondary-bg"
                       onClick={() => setOpen(true)}
                     >
                       <i>
                         <FaPlay />
                       </i>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
-                <BounceLeft className="image">
+                {/* <BounceLeft className="image">
                   <img src={"/images/about/01.png"} alt="image" />
                 </BounceLeft>
-                <h2 className="d-none d-xl-block">Since 1980</h2>
+                <h2 className="d-none d-xl-block">Since 1980</h2> */}
               </div>
             </div>
             <div className="col-lg-6">
@@ -63,8 +63,8 @@ const AboutOne = () => {
                 <div className="content pb-65 bor-bottom">
                   <div className="row g-4">
                     <Card
-                      count={"500+"}
-                      numberEnd={""}
+                      count={"500"}
+                      numberEnd={"+"}
                       description={"Successful Construction Projects Completed"}
                     />
                     <Card
@@ -80,8 +80,8 @@ const AboutOne = () => {
                       }
                     />
                     <Card
-                      count={"10K+"}
-                      numberEnd={""}
+                      count={"10"}
+                      numberEnd={"K+"}
                       description={
                         "Tons of Premium Building Materials Delivered"
                       }
@@ -95,7 +95,7 @@ const AboutOne = () => {
                     </i>
                     <div className="about_info_con">
                       <span>call any time</span>
-                      <a href="tel:+912659302003">+91 2659 302 003</a>
+                      <span>+91 2659 302 003</span>
                     </div>
                   </div>
                   <span className="d-none d-sm-inline">Or</span>
