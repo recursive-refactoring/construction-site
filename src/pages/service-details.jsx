@@ -1,16 +1,25 @@
-import React from 'react'
-import PageBanner from '../components/sections/pageBanner'
-import ServiceArtical from '../components/sections/services/serviceArtical'
-import ServiceFive from '../components/sections/services/serviceFive'
+import React from "react";
+import PageBanner from "../components/sections/pageBanner";
+import ServiceArtical from "../components/sections/services/serviceArtical";
+import ServiceFive from "../components/sections/services/serviceFive";
+import { useParams } from "react-router";
+import { serviceDetailsData } from "../utils/fackData/serviceDetailsData";
 
 const ServiceDetails = () => {
-    return (
-        <main>
-            <PageBanner breadcrumbMain={"Our Services"} breadcrumbMainLink={"/service-1"} breadcrumbTitle={"Property Maintenance"} />
-            <ServiceArtical/>
-            <ServiceFive/>
-        </main>
-    )
-}
+  const { id } = useParams();
+  const serviceDetail = serviceDetailsData?.[id];
 
-export default ServiceDetails
+  return (
+    <main>
+      <PageBanner
+        breadcrumbMain={"Our Services"}
+        breadcrumbMainLink={"/services"}
+        breadcrumbTitle={serviceDetail?.title}
+      />
+      <ServiceArtical serviceDetail={serviceDetail} />
+      <ServiceFive serviceDetail={serviceDetail} />
+    </main>
+  );
+};
+
+export default ServiceDetails;
