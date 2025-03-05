@@ -2,6 +2,7 @@ import React from "react";
 import { FaEnvelope, FaLocationDot, FaPhone } from "react-icons/fa6";
 import CustomSelect from "../ui/customSelect";
 import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const options = [
   { value: "account", label: "Account" },
@@ -11,6 +12,10 @@ const options = [
 ];
 
 const ContactForm = () => {
+  const submitForm = (e) => {
+    e.preventDefault();
+    toast.success("Your message is submitted successfully");
+  };
   return (
     <section className="contact section-padding">
       <div className="container">
@@ -57,14 +62,15 @@ const ContactForm = () => {
           </div>
           <div className="col-lg-6">
             <div className="form-area">
-              <form action="#0">
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
+              <form onSubmit={submitForm}>
+                <input required type="text" placeholder="Name" />
+                <input required type="email" placeholder="Email" />
                 <CustomSelect
                   options={options}
                   placeholder="Select a Subject"
                 />
                 <textarea
+                  required
                   name="Your Review"
                   id="massage"
                   placeholder="Message..."
@@ -73,7 +79,7 @@ const ContactForm = () => {
                   <span></span>
                   <p>I accept your terms & conditions</p>
                 </div>
-                <button className="mt-40">
+                <button type="submit" className="mt-40">
                   Submit Now <i className="fa-solid fa-arrow-right-long"></i>
                 </button>
               </form>
