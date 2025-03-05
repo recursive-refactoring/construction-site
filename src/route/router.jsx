@@ -30,6 +30,8 @@ import ShopDetails from "../pages/shop-details";
 import Cart from "../pages/cart";
 import Checkout from "../pages/checkout";
 import BlogRight from "../pages/blog-right";
+import PrivacyPolicy from "../pages/privacy-policy";
+import TermsAndConditions from "../pages/terms-and-conditions";
 
 export const router = createBrowserRouter([
   {
@@ -80,6 +82,14 @@ export const router = createBrowserRouter([
       {
         path: "/service-details/:id",
         element: <ServiceDetails />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/terms-and-conditions",
+        element: <TermsAndConditions />,
       },
       // {
       //   path: "/portfolio-1",

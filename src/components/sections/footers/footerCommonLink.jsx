@@ -87,13 +87,13 @@ const FooterCommonLink = () => {
             <div className="col-6">
               <ul>
                 <li>
-                  <Link to="#0">Contact Us</Link>
+                  <Link to="/contact">Contact Us</Link>
                 </li>
                 <li>
-                  <Link to="#0">Privacy Policy</Link>
+                  <Link to="/privacy-policy">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link to="#0">Terms and conditions</Link>
+                  <Link to="/terms-and-conditions">Terms and conditions</Link>
                 </li>
               </ul>
             </div>
