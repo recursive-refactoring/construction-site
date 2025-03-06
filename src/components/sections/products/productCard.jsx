@@ -12,12 +12,13 @@ const ProductCard = ({ id, thumbnail, title, price, discount_price }) => {
     <div className="item">
       <img src={thumbnail} alt="image" />
       <div className="content">
-        <h4>
-          <Link to="/shop-single">{title}</Link>
+        <h4 style={{ color: "white" }}>
+          {title}
+          {/* <Link to=""></Link> */}
         </h4>
         <del style={{ textDecoration: "none" }}>{price}</del>{" "}
       </div>
-      <div className="icon">
+      {/* <div className="icon">
         <div>
           <i>
             <FaHeart />
@@ -35,7 +36,7 @@ const ProductCard = ({ id, thumbnail, title, price, discount_price }) => {
             <FaCartShopping />
           </i>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

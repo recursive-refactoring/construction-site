@@ -33,7 +33,7 @@ const FooterCommonLink = () => {
           </div>
           <ul>
             <li>
-              <Link to="#0">
+              <Link to="#">
                 <i className="pe-1 text-white">
                   <FaLocationDot />
                 </i>{" "}
@@ -55,7 +55,7 @@ const FooterCommonLink = () => {
               </Link>
             </li>
             <li>
-              <Link to="#0">
+              <Link to="mailto:info@brickmond.com">
                 <i className="pe-1 text-white">
                   <FaEnvelope />
                 </i>{" "}

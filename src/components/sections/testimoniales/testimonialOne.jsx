@@ -30,7 +30,7 @@ const TestimonialOne = () => {
           <div className="row justify-content-between">
             <div className="col-lg-7 mb-5 mb-lg-0">
               <SectionTitle className="mb-5">
-                <SectionTitle.Name>PUBLIC TESTIMONIAL</SectionTitle.Name>
+                <SectionTitle.Name>TESTIMONIAL</SectionTitle.Name>
                 <SectionTitle.Title>
                   Trusted by Industry Leaders
                 </SectionTitle.Title>
