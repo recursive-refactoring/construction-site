@@ -5,91 +5,65 @@ export const TermsAndConditionsContent = () => {
   return (
     <div>
       <SimpleTextPoint
-        heading="Our Services"
-        description={`The information and resources provided on this website are designed to offer general insights into homecare services. This content is purely for informational purposes and should not replace professional medical advice. We encourage users to consult qualified healthcare professionals for any personalised health concerns or questions.`}
+        heading="1. Introduction"
+        description={`Welcome to [Your Company Name]. By accessing our website and using our services, you agree to comply with the following terms and conditions.`}
       />
       <SimpleTextPoint
-        heading="Changes to Terms and Website Content"
-        description={`We retain the right to modify, update, or remove portions of these Terms or any content on this website at our discretion, without prior notice. By continuing to access and use this website, you acknowledge and accept any such changes to these Terms.`}
-      />
-      <SimpleTextPoint
-        heading="Website Content and Use"
-        description={`All content available on this website, including text, graphics, logos, images, and design elements, is owned by us and is intended solely for personal, non-commercial use. Any redistribution, modification, or commercial use of this material is strictly prohibited without prior written permission.`}
+        heading="2. Services"
+        description={`We provide construction services, including excavation, roadwork, asphalt paving, interlock fixing, and building material supply. All projects are subject to availability and agreement on project scope, timeline, and pricing.`}
       />
       <BulletTextPoint
-        heading="User Conduct"
-        description="When engaging with interactive features on our website, you agree to refrain from posting content that:"
+        heading="3. Payments & Pricing"
         points={[
           {
-            // heading: "Contact Details:",
-            title: `Is illegal, abusive, or offensive;`,
+            title: `Payment terms will be agreed upon before the commencement of any project.`,
           },
           {
-            // heading: "Service-Related Information:",
-            title: `Violates intellectual property rights;`,
+            title: `Quotes provided are subject to change based on material costs and project modifications.`,
           },
           {
-            // heading: "Payment Details:",
-            title: ` Contains unsolicited promotions or spam;`,
-          },
-          {
-            // heading: "Personal Information",
-            title: `Includes harmful code or viruses.`,
-          },
-          {
-            // heading: "Personal Information",
-            title: `We reserve the right to remove any content that breaches these Terms or is deemed inappropriate.`,
+            title: `Late payments may result in additional charges or suspension of services.`,
           },
         ]}
       />
       <SimpleTextPoint
-        heading="No Medical Advice"
-        description={`This website provides general information to support individuals with age-related or physical care needs. It does not provide specific medical advice, referrals, or recommendations. Always consult qualified healthcare providers for personal medical guidance.`}
+        heading="4. Project Timelines"
+        description={`Estimated project completion timelines are provided in good faith but may be affected by unforeseen circumstances such as weather conditions, material shortages, or regulatory approvals.Clients will be notified of any delays and necessary adjustments.`}
+      />
+      <BulletTextPoint
+        heading="5. Warranty & Liability"
+        points={[
+          {
+            title: `We guarantee high-quality workmanship and materials as per industry standards.`,
+          },
+          {
+            title: `Any defects due to workmanship will be rectified within the agreed warranty period.`,
+          },
+          {
+            title: `We are not liable for damages caused by misuse, third-party actions, or external factors beyond our control.`,
+          },
+        ]}
       />
       <SimpleTextPoint
-        heading="Disclaimers"
+        heading="6. Cancellations & Refunds"
         description={
-          "While we strive to ensure that the information on our website is accurate and current, there may be occasional errors or outdated information. We make no guarantees regarding the accuracy, reliability, or completeness of the content provided, which is offered “as is” without any warranties. Use of this website is entirely at your own risk."
+          "Clients may cancel a project before work commences, subject to applicable cancellation fees.Refunds for materials or services already provided will not be issued."
         }
       />
       <SimpleTextPoint
-        heading="Limitation of Liability"
-        description={`We shall not be held liable for any damages, viruses, or issues that may impact your device as a result of using this website. We disclaim all liability for any damages associated with your use or attempted use of this site.`}
+        heading="7. Intellectual Property"
+        description={`All content, logos, and materials on this website are the property of [Your Company Name]. Unauthorized use or reproduction is strictly prohibited.`}
       />
       <SimpleTextPoint
-        heading="Links to External Websites"
+        heading="8. Governing Law"
         description={
-          "Our website may include links to external websites for your convenience. These third-party sites are not under our control, and we do not endorse or assume responsibility for their content. Access to linked websites is at your own risk."
+          "These terms are governed by the laws of [Your Country/State]. Any disputes shall be resolved through arbitration or legal proceedings within the relevant jurisdiction."
         }
       />
       <SimpleTextPoint
         heading="Legal Compliance"
         description={
           "By using this website, you agree to adhere to all relevant laws and regulations. We reserve the right to report any suspected violations to the appropriate authorities and will cooperate with any legal investigations as necessary."
-        }
-      />
-      <SimpleTextPoint
-        heading="User Feedback and Submissions"
-        description={
-          "We welcome feedback from users to help us improve our website. Any suggestions, ideas, or submissions provided to us are considered non-confidential and may be used at our discretion, without any obligation or compensation to the contributor."
-        }
-      />
-      <SimpleTextPoint
-        heading="Termination of Access"
-        description={
-          "We reserve the right to restrict or terminate your access to our website if we determine that your conduct is disruptive or violates these Terms."
-        }
-      />
-      <SimpleTextPoint
-        heading="Governing Law"
-        description={
-          "These Terms are governed by the laws of the United Kingdom. Any legal disputes arising from these Terms must be filed within one year from the date of the cause of action."
-        }
-      />
-      <SimpleTextPoint
-        heading="Notices and Trademarks"
-        description={
-          "All trademarks and service marks displayed on this website are owned by us and may not be used without our explicit written permission.."
         }
       />
     </div>
