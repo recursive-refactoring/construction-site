@@ -22,7 +22,7 @@ const AboutThree = ({ className }) => {
           <div className="row g-5 align-items-center">
             <div className="col-xl-6">
               <SectionTitle className={"m-0"}>
-                <SectionTitle.Name>ABOUT TO Brick Mound</SectionTitle.Name>
+                <SectionTitle.Name>ABOUT Brick Mond</SectionTitle.Name>
                 <SectionTitle.Title>
                   Building Excellence, Strengthening Communities.
                 </SectionTitle.Title>
