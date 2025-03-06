@@ -82,7 +82,7 @@ const HeroOne = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="image">
+        <div className="image" style={{ zIndex: -1 }}>
           <Swiper
             slidesPerView={1}
             loop={true}

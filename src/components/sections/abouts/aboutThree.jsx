@@ -86,7 +86,7 @@ const AboutThree = ({ className }) => {
             </div>
             <div className="experience_video overlay50">
               <img src="/images/experience/04.jpg" alt="image" />
-              <div className="video-btn-wrp">
+              {/* <div className="video-btn-wrp">
                 <div className="video video-pulse">
                   <div
                     className="video-popup secondary-bg"
@@ -97,7 +97,7 @@ const AboutThree = ({ className }) => {
                     </i>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </SlideDown>
         </div>

@@ -95,7 +95,7 @@ const AboutOne = () => {
                     </i>
                     <div className="about_info_con">
                       <span>call any time</span>
-                      <span>+91 2659 302 003</span>
+                      <span>+974 74758881</span>
                     </div>
                   </div>
                   <span className="d-none d-sm-inline">Or</span>
