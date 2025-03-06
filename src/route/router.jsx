@@ -30,138 +30,147 @@ import ShopDetails from "../pages/shop-details";
 import Cart from "../pages/cart";
 import Checkout from "../pages/checkout";
 import BlogRight from "../pages/blog-right";
+import PrivacyPolicy from "../pages/privacy-policy";
+import TermsAndConditions from "../pages/terms-and-conditions";
 
 export const router = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element: <RootLayout />,
+    // errorElement: <Error />,
+    children: [
+      {
         path: "/",
-        element: <RootLayout />,
-        // errorElement: <Error />,
-        children: [
-            {
-                path: "/",
-                element: <HomeOne />
-            }
-        ]
-    },
-    {
-        path: "/",
-        element: <LayoutTwo />,
-        children: [
-            {
-                path: "/home-2",
-                element: <HomeTwo />
-            }
-        ]
-    },
-    {
-        path: "/",
-        element: <LayoutThree />,
-        children: [
-            {
-                path: "/home-3",
-                element: <HomeThree />
-            },
-            {
-                path: "/about-1",
-                element: <AboutOne />
-            },
-            {
-                path: "/about-2",
-                element: <AboutTwo />
-            },
-            {
-                path: "/service-1",
-                element: <ServiceOne />
-            },
-            {
-                path: "/service-2",
-                element: <ServiceTwo />
-            },
-            {
-                path: "/service-details",
-                element: <ServiceDetails />
-            },
-            {
-                path: "/portfolio-1",
-                element: <PortfolioOne />
-            },
-            {
-                path: "/portfolio-2",
-                element: <PortfolioTwo />
-            },
-            {
-                path: "/portfolio-details",
-                element: <PortfolioDetails />
-            },
-            {
-                path: "/team-1",
-                element: <TeamOne />
-            },
-            {
-                path: "/team-2",
-                element: <TeamTwo />
-            },
-            {
-                path: "/team-3",
-                element: <TeamThree />
-            },
-            {
-                path: "/team-details",
-                element: <TeamDetails />
-            },
-            {
-                path: "/shop",
-                element: <Shop />
-            },
-            {
-                path: "/shop-details",
-                element: <ShopDetails />
-            },
-            {
-                path: "/cart",
-                element: <Cart />
-            },
-            {
-                path: "/checkout",
-                element: <Checkout />
-            },
-            {
-                path: "/blog-2",
-                element: <BlogTwo />
-            },
-            {
-                path: "/blog-3",
-                element: <BlogThree />
-            },
-            {
-                path: "/blog-left",
-                element: <BlogLeft />
-            },
-            {
-                path: "/blog-right",
-                element: <BlogRight />
-            },
-            {
-                path: "/blog-single-left",
-                element: <BlogSingleLeft />
-            },
-            {
-                path: "/blog-single-right",
-                element: <BlogSingleRight />
-            },
-            {
-                path: "/contact",
-                element: <Contact />
-            },
-            {
-                path: "/faq",
-                element: <Faq />
-            },
-            {
-                path: "/error",
-                element: <Error />
-            },
-
-        ]
-    },
-])
+        element: <HomeOne />,
+      },
+    ],
+  },
+  // {
+  //   path: "/",
+  //   element: <LayoutTwo />,
+  //   children: [
+  //     {
+  //       path: "/home-2",
+  //       element: <HomeTwo />,
+  //     },
+  //   ],
+  // },
+  {
+    path: "/",
+    element: <LayoutThree />,
+    children: [
+      // {
+      //   path: "/home-3",
+      //   element: <HomeThree />,
+      // },
+      // {
+      //   path: "/about-1",
+      //   element: <AboutOne />,
+      // },
+      {
+        path: "/about-us",
+        element: <AboutTwo />,
+      },
+      {
+        path: "/services",
+        element: <ServiceOne />,
+      },
+      // {
+      //   path: "/service-2",
+      //   element: <ServiceTwo />,
+      // },
+      {
+        path: "/service-details/:id",
+        element: <ServiceDetails />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/terms-and-conditions",
+        element: <TermsAndConditions />,
+      },
+      // {
+      //   path: "/portfolio-1",
+      //   element: <PortfolioOne />,
+      // },
+      // {
+      //   path: "/portfolio-2",
+      //   element: <PortfolioTwo />,
+      // },
+      // {
+      //   path: "/portfolio-details",
+      //   element: <PortfolioDetails />,
+      // },
+      // {
+      //   path: "/team-1",
+      //   element: <TeamOne />,
+      // },
+      // {
+      //   path: "/team-2",
+      //   element: <TeamTwo />,
+      // },
+      // {
+      //   path: "/team-3",
+      //   element: <TeamThree />,
+      // },
+      // {
+      //   path: "/team-details",
+      //   element: <TeamDetails />,
+      // },
+      // {
+      //   path: "/shop",
+      //   element: <Shop />,
+      // },
+      // {
+      //   path: "/shop-details",
+      //   element: <ShopDetails />,
+      // },
+      // {
+      //   path: "/cart",
+      //   element: <Cart />,
+      // },
+      // {
+      //   path: "/checkout",
+      //   element: <Checkout />,
+      // },
+      // {
+      //   path: "/blog-2",
+      //   element: <BlogTwo />,
+      // },
+      // {
+      //   path: "/blog-3",
+      //   element: <BlogThree />,
+      // },
+      // {
+      //   path: "/blog-left",
+      //   element: <BlogLeft />,
+      // },
+      // {
+      //   path: "/blog-right",
+      //   element: <BlogRight />,
+      // },
+      // {
+      //   path: "/blog-single-left",
+      //   element: <BlogSingleLeft />,
+      // },
+      // {
+      //   path: "/blog-single-right",
+      //   element: <BlogSingleRight />,
+      // },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      // {
+      //   path: "/faq",
+      //   element: <Faq />,
+      // },
+      {
+        path: "/error",
+        element: <Error />,
+      },
+    ],
+  },
+]);

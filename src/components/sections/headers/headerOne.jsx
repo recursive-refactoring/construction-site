@@ -34,16 +34,16 @@ const HeaderOne = () => {
                             <ul className={`main-menu ${isMobileMenuOpen ? "active" : ""}`}>
                                 <Menus />
                             </ul>
-                            <div className="header_one_info d-none d-xl-flex align-items-center">
+                            {/* <div className="header_one_info d-none d-xl-flex align-items-center">
                                 <ShopCart />
                                 <i id="openButton" className="fa-solid fa-bars" onClick={() => setIsActiveSidebar(true)}><FaBars /></i>
                                 <Link to="contact.html" className="btn-one"><span>Get Consultation</span> <i><FaArrowRight /></i></Link>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
             </header>
-            <Sidebar isActiveSidebar={isActiveSidebar} setIsActiveSidebar={setIsActiveSidebar} />
+            {/* <Sidebar isActiveSidebar={isActiveSidebar} setIsActiveSidebar={setIsActiveSidebar} /> */}
         </>
     )
 }
