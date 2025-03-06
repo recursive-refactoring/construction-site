@@ -31,10 +31,7 @@ const ContactForm = () => {
               </div>
               <ul>
                 <li>
-                  <Link
-                    to="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&amp;hl=en_US&amp;ll=18.672105000000013%2C105.68673800000003&amp;z=17"
-                    target="_blank"
-                  >
+                  <Link to="JavaScript:void(0)">
                     <i>
                       <FaLocationDot />
                     </i>
@@ -42,7 +39,7 @@ const ContactForm = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link>
+                  <Link to="tel:+97474758881">
                     <i>
                       <FaPhone />
                     </i>

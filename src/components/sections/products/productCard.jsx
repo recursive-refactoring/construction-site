@@ -13,8 +13,7 @@ const ProductCard = ({ id, thumbnail, title, price, discount_price }) => {
       <img src={thumbnail} alt="image" />
       <div className="content">
         <h4 style={{ color: "white" }}>
-          {title}
-          {/* <Link to=""></Link> */}
+          <Link to="JavaScript:void(0)">{title}</Link>
         </h4>
         <del style={{ textDecoration: "none" }}>{price}</del>{" "}
       </div>

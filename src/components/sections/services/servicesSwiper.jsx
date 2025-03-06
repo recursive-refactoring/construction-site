@@ -48,7 +48,7 @@ export default ServicesSwiper;
 const Card = ({ src, service_name, id }) => {
   return (
     <div className="item">
-      <Link to="#0" className="location_icon">
+      <Link to={`/service-details/${id}`} className="location_icon">
         <i>
           <FaLocationArrow />
         </i>

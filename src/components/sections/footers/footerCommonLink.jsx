@@ -33,7 +33,7 @@ const FooterCommonLink = () => {
           </div>
           <ul>
             <li>
-              <Link to="#">
+              <Link to="JavaScript:void(0)">
                 <i className="pe-1 text-white">
                   <FaLocationDot />
                 </i>{" "}
@@ -47,7 +47,7 @@ const FooterCommonLink = () => {
               </Link> */}
             </li>
             <li>
-              <Link to="tel:+4065550120">
+              <Link to="tel:+97474758881">
                 <i className="pe-1 text-white">
                   <FaPhoneVolume />
                 </i>{" "}
