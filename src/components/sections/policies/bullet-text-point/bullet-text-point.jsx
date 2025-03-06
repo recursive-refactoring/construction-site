@@ -3,7 +3,7 @@ import { Fragment } from "react";
 export const BulletTextPoint = (props) => {
   const { heading, description, points, description2 } = props;
   return (
-    <div>
+    <div style={{ marginBottom: "1rem" }}>
       <p
         style={{
           fontSize: "1.2rem",

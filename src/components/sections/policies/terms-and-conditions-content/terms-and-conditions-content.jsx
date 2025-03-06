@@ -6,7 +6,7 @@ export const TermsAndConditionsContent = () => {
     <div>
       <SimpleTextPoint
         heading="1. Introduction"
-        description={`Welcome to [Your Company Name]. By accessing our website and using our services, you agree to comply with the following terms and conditions.`}
+        description={`Welcome to Brick Mond Construction . By accessing our website and using our services, you agree to comply with the following terms and conditions.`}
       />
       <SimpleTextPoint
         heading="2. Services"

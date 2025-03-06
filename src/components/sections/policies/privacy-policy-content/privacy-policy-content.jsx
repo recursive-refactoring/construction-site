@@ -6,7 +6,7 @@ export const PrivacyPolicyContent = () => {
     <div>
       <SimpleTextPoint
         heading="1. Introduction"
-        description={`At [Your Company Name], we respect your privacy and are committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information.`}
+        description={`At Brick Mond Construction , we respect your privacy and are committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information.`}
       />
       <BulletTextPoint
         heading="2. Information We Collect"

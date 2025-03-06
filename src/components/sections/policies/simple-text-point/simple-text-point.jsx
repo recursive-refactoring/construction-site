@@ -1,7 +1,7 @@
 export const SimpleTextPoint = (props) => {
   const { heading, description, phone, address, email } = props;
   return (
-    <div>
+    <div style={{ marginBottom: "1rem" }}>
       <p
         style={{
           fontSize: "1.2rem",
