@@ -25,9 +25,9 @@ const Card = ({ id, src, service_name }) => {
     <SlideUp delay={id} className="col-xl-4 col-lg-6">
       <div className="item">
         <h3>
-          <Link to="/service-single">{service_name}</Link>
+          <Link to={`/service-details/${id}`}>{service_name}</Link>
         </h3>
-        <Link to="/service-single" className="image d-block">
+        <Link to={`/service-details/${id}`} className="image d-block">
           <img src={src} alt="image" />
           <div className="gaps-right d-none d-sm-block float-bob-x">
             <img src="/images/shape/gaps-primary.png" alt="gaps-primary" />

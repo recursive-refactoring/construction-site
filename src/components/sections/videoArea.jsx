@@ -27,7 +27,7 @@ const VideoArea = ({ bg_img }) => {
         channel="youtube"
         youtube={{ mute: 0, autoplay: 0 }}
         isOpen={isOpen}
-        videoId="TfU0qjuZkJ4"
+        videoId="Za5yQgQYWBM"
         onClose={() => setOpen(false)}
       />
     </>
